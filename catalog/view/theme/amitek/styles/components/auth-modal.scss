@@ -1,0 +1,100 @@
+.auth-modal {
+  .modal-header {
+    padding-bottom: 0;
+    border-bottom: 0;
+
+    .btn-close {
+      border: none;
+      background: none;
+      border-radius: var(--bs-border-radius-lg);
+      padding: 5px;
+      margin-left: auto;
+
+      svg {
+        fill: var(--slate-500);
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+
+  .auth-modal--nav {
+    margin-bottom: var(--bs-modal-header-padding);
+    border-bottom: 0;
+
+    & > .nav-item {
+      button {
+        border: none;
+        background: none;
+        font-size: 20px;
+        margin: 0;
+        padding: 5px 20px;
+        color: var(--black);
+        top: 1px;
+        border-bottom: 2px solid var(--black);
+
+        &.active,
+        &:hover {
+          color: var(--yellow);
+          font-weight: 500;
+          border-bottom: 2px solid var(--yellow);
+        }
+      }
+    }
+  }
+
+  .auth-modal--body {
+
+    .tab-register--nav,
+    .tab-login--nav {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-bottom: var(--bs-modal-header-padding);
+      border-bottom: 0;
+
+      .nav-item {
+        button {
+          width: 100%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.75rem;
+          flex-wrap: nowrap;
+          position: relative;
+          padding: 0.25rem 0.75rem;
+          font-size: 1.25rem;
+          color: var(--yellow);
+          border: 2px solid var(--black);
+          border-radius: var(--bs-border-radius-lg);
+          background-color: var(--black);
+          transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+          &:not(.active) {
+            color: var(--black);
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.register-business--steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .register-business--step {
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &.active {
+
+    }
+
+    &.disabled {
+      color: var(--slate-400);
+    }
+  }
+}

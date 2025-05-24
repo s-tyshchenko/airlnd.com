@@ -1,0 +1,24 @@
+.list-group {
+  --bs-list-group-color: var(--black);
+  --bs-list-group-bg: var(--slate-100);
+  --bs-list-group-border-color: var(--yellow);
+  --bs-list-group-border-width: 1px;
+  --bs-list-group-border-radius: var(--bs-border-radius-lg);
+  --bs-list-group-item-padding-x: 1rem;
+  --bs-list-group-item-padding-y: 0.75rem;
+  --bs-list-group-action-color: var(--black);
+  --bs-list-group-action-hover-color: var(--black);
+  --bs-list-group-action-hover-bg: var(--slate-500);
+  --bs-list-group-action-active-color: var(--black);
+  --bs-list-group-action-active-bg: var(--slate-500);
+  --bs-list-group-disabled-color: var(--slate-700);
+  --bs-list-group-disabled-bg: var(--slate-200);
+  --bs-list-group-active-color: var(--black);
+  --bs-list-group-active-bg: var(--yellow);
+  --bs-list-group-active-border-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: var(--bs-list-group-border-radius);
+}

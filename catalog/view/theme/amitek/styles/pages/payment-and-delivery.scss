@@ -1,0 +1,143 @@
+.payment-and-delivery-page_section {
+  margin-bottom: 40px;
+}
+
+.payment-and-delivery-page_section > h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.payment-and-delivery-page_section > p {
+  color: var(--slate-400);
+}
+
+/* Delivery */
+.delivery-methods-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.delivery-method-box {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid var(--slate-300);
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+}
+
+.delivery-method-box-heading {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.delivery-method-box-heading svg {
+  max-width: 35px;
+  max-height: 35px;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  fill: var(--slate-400);
+}
+
+.delivery-method-box h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.delivery-method-box p {
+  margin-bottom: 0;
+}
+
+/* Payment */
+.payment-methods-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.payment-method-box {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid var(--slate-300);
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+}
+
+.payment-method-box-heading {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  min-height: 52px;
+}
+
+.payment-method-box-heading svg {
+  max-width: 35px;
+  max-height: 35px;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  fill: var(--slate-400);
+}
+
+.payment-method-box h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.payment-method-box p {
+  margin-bottom: 0;
+  color: var(--slate-700);
+}
+
+/* Out of stock */
+.payment-and-delivery-page_section.out-of-stock_section {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--yellow-400);
+  background: var(--yellow-100);
+}
+
+.payment-and-delivery-page_section.out-of-stock_section > h2 {
+  margin-top: 0;
+  color: var(--yellow-400);
+  font-weight: 600;
+}
+
+.payment-and-delivery-page_section.out-of-stock_section > p {
+  margin-top: 0;
+  color: var(--slate-600);
+}
+
+@media(min-width: 768px) {
+
+  .payment-methods-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .payment-method-box {
+    min-height: 0;
+  }
+
+  .delivery-methods-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .delivery-method-box {
+    min-height: 0;
+  }
+}

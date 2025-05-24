@@ -1,0 +1,162 @@
+.mega-menu {
+  padding: 15px 0;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border-radius: 0 0 var(--bs-border-radius-xl) var(--bs-border-radius-xl);
+  z-index: 2;
+
+  @at-root {
+    .mega-menu--category {
+
+      @at-root {
+        .mega-menu--category-item {
+          position: relative;
+          display: block;
+          padding: 15px 15px 15px 55px;
+          text-align: left;
+          color: var(--black, #111) !important;
+          z-index: 3;
+
+          @at-root {
+            .mega-menu--category-arrow {
+              display: inline-block;
+              position: absolute;
+              width: 24px;
+              right: 15px;
+              top: 50%;
+              margin-top: -12px;
+
+
+              svg, path {
+                fill: var(--black, #111);
+              }
+            }
+          }
+
+          svg:first-child g,
+          svg:first-child path {
+            fill: var(--black, #111);
+          }
+
+          & > svg:first-child {
+            position: absolute;
+            display: inline-block;
+            width: 24px;
+            top: 50%;
+            margin-top: -12px;
+            left: 15px;
+          }
+        }
+
+        .mega-menu--subcategories {
+          display: none;
+          position: absolute;
+          min-height: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          padding: 15px 15px 15px 300px;
+          background: linear-gradient(to right, transparent 300px, var(--slate-200) 300px);
+          box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+          z-index: 2;
+          border-radius: 0 0 var(--bs-border-radius-xl) var(--bs-border-radius-xl);
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+
+          @at-root {
+            .mega-menu--subcategory {
+              display: flex;
+              flex-direction: column;
+              padding: 0 15px;
+
+              @at-root {
+                .mega-menu--subcategory-heading {
+                  padding: 15px;
+                  border-radius: 5px;
+                  margin-bottom: 10px;
+                  font-weight: 500;
+                  display: inline-flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  color: var(--black) !important;
+                  text-decoration: none !important;
+
+                  img {
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                    object-fit: contain;
+                    margin-bottom: 10px;
+                    max-height: 150px;
+                  }
+                }
+
+                .mega-menu--subcategory-child {
+
+                }
+
+                .mega-menu--subcategories-more {
+                  display: block;
+                  margin-top: 10px;
+                  color: var(--yellow, #FFB500) !important;
+
+                  &:hover {
+                    text-decoration: underline !important;
+                  }
+                }
+              }
+
+              &:hover {
+                .mega-menu--subcategory-heading {
+                  color: var(--slate-500) !important;
+                  background: var(--slate-300);
+
+                  img {
+                    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.active,
+      &:hover {
+        .mega-menu--category-item {
+          color: var(--black, #111) !important;
+          background: var(--slate-200, #111);
+        }
+
+        .mega-menu--subcategories {
+          display: grid;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .mega-menu {
+    @at-root {
+      .mega-menu--category {
+        @at-root {
+          .mega-menu--category-item {
+            padding: 10px 15px 10px 55px;
+
+            @at-root {
+              .mega-menu--category-arrow {
+                display: none;
+              }
+            }
+          }
+        }
+
+
+        .mega-menu--subcategories {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

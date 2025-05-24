@@ -1,0 +1,10 @@
+.dropdown-menu {
+  --bs-dropdown-min-width: 0;
+  --bs-dropdown-border-radius: var(--bs-border-radius-lg);
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.dropdown-item {
+  white-space: normal;
+}

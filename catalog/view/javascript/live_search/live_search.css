@@ -1,0 +1,117 @@
+.live-search,
+.live-search--mobile
+{
+	width:100%;
+	position: absolute;
+	left: 0;
+	margin-top: -5px;
+	padding-top: 5px;
+	z-index: 1000;
+	background-color:#FFF;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top: aliceblue;
+	display: none;
+}
+
+.live-search--container {
+	list-style: none;
+	padding: 0;
+	border-top: 1px solid var(--gray-2, #D0D0D0);
+}
+
+.live-search--item a {
+	display: flex;
+	padding: 20px;
+	align-items: center;
+	width: 100%;
+	color: var(--black, #111) !important;
+}
+.live-search--item:hover a {
+	background: var(--yellow-light, rgba(255, 204, 0, 0.10));
+}
+
+.live-search--image {
+	padding-right: 15px;
+}
+
+.live-search--name {
+	padding-right: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.live-search--name p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+}
+
+.live-search--name small {
+    color: var(--slate-600);
+    font-size: 12px;
+}
+
+.live-search--price {
+    position: relative;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 15px;
+    font-size: 18px;
+    white-space: nowrap;
+    font-weight: 600;
+    text-align: right;
+}
+
+.live-search--price.live-search--discount {
+    padding-top: 0;
+}
+
+.live-search--price.live-search--discount span {
+    display: block;
+    color: var(--gray-3, #828282);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.live-search--cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    width: 54px;
+    background: var(--black, #111);
+    border-radius: 5px;
+}
+
+.live-search--cart-btn svg {
+    fill: var(--yellow, #FFB500);
+}
+
+.live-search--cart-btn svg:last-child,
+.live-search--cart-btn:hover svg:first-child {
+    display:none;
+}
+
+.live-search--cart-btn:hover svg:last-child {
+    display:block;
+}
+
+.live-search--btn-all {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    color: var(--yellow, #FFB500) !important;
+    text-align: center;
+}
+.live-search--btn-all:hover {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    color: var(--yellow, #FFB500) !important;
+    text-align: center;
+    text-decoration-line: underline;
+}

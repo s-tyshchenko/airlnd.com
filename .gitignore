@@ -1,0 +1,14 @@
+.idea
+/vendor/
+/assets/
+sitemaps
+image/catalog/*
+image/cache/*
+image/cachewebp/*
+config.php
+.DS_Store
+/node_modules/
+admin/.DS_Store
+admin/view/.DS_Store
+catalog/.DS_Store
+admin/.DS_Store

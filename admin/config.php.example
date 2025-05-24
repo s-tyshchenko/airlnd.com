@@ -1,0 +1,32 @@
+<?php
+// HTTP
+define('HTTP_SERVER', 'https://amitek.com.ua/admin/');
+define('HTTP_CATALOG', 'https://amitek.com.ua/');
+
+// HTTPS
+define('HTTPS_SERVER', 'https://amitek.com.ua/admin/');
+define('HTTPS_CATALOG', 'https://amitek.com.ua/');
+
+// DIR
+define('DIR_APPLICATION', '/var/www/ch03beafeb/www/amitek.com.ua/admin/');
+define('DIR_SYSTEM', '/var/www/ch03beafeb/www/amitek.com.ua/system/');
+define('DIR_IMAGE', '/var/www/ch03beafeb/www/amitek.com.ua/image/');
+define('DIR_LANGUAGE', '/var/www/ch03beafeb/www/amitek.com.ua/admin/language/');
+define('DIR_TEMPLATE', '/var/www/ch03beafeb/www/amitek.com.ua/admin/view/template/');
+define('DIR_CONFIG', '/var/www/ch03beafeb/www/amitek.com.ua/system/config/');
+define('DIR_CACHE', '/var/www/ch03beafeb/www/amitek.com.ua/system/storage/cache/');
+define('DIR_DOWNLOAD', '/var/www/ch03beafeb/www/amitek.com.ua/system/storage/download/');
+define('DIR_LOGS', '/var/www/ch03beafeb/www/amitek.com.ua/system/storage/logs/');
+define('DIR_MODIFICATION', '/var/www/ch03beafeb/www/amitek.com.ua/system/storage/modification/');
+define('DIR_UPLOAD', '/var/www/ch03beafeb/www/amitek.com.ua/system/storage/upload/');
+define('DIR_CATALOG', '/var/www/ch03beafeb/www/amitek.com.ua/catalog/');
+
+// DB
+define('DB_DRIVER', 'mysqli');
+define('DB_HOSTNAME', 'corsa.cityhost.com.ua');
+define('DB_USERNAME', 'ch03beafeb_amitek');
+define('DB_PASSWORD', 'vGo6bJtFq2');
+define('DB_DATABASE', 'ch03beafeb_amitek');
+define('DB_PORT', '3306');
+define('DB_PREFIX', 'oc_');
+define('DB_CHARSET', 'utf8');

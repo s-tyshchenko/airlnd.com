@@ -1,0 +1,19 @@
+.module-container {
+  padding: 40px 0;
+
+  @at-root {
+    .module-container--heading {
+      margin-bottom: 20px;
+    }
+
+    .module-container--content {
+
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .module-container {
+    padding: 20px 0;
+  }
+}

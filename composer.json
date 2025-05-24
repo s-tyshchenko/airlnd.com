@@ -1,0 +1,7 @@
+{
+  "require": {
+    "predis/predis": "^1.1",
+    "google/apiclient": "^2.14",
+    "ext-curl": "*"
+  }
+}

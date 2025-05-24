@@ -1,0 +1,60 @@
+.module-products--container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  &.products-container--scrollable-x {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: start;
+
+    & > * {
+      width: 21%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.module-products--btn-more {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    display: inline-block;
+    padding-right: 18px;
+  }
+
+  svg {
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    path {
+      fill: var(--black);
+    }
+  }
+
+  &:hover {
+    color: var(--yellow);
+
+    svg path {
+      fill: var(--yellow);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .module-products--container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    &.products-container--scrollable-x > * {
+      width: 60%;
+    }
+  }
+}
